@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWorkWeb - Coming Soon</title>
+    <!-- 파비콘 설정 (원하시는 아이콘 경로로 수정 가능합니다) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v7.4.5/dist/web/static/pretendard.css" />
+    
+    <style>
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        /* 다크 글래스모피즘 효과 */
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-100 flex flex-col justify-between min-h-screen p-6 md:p-12 overflow-x-hidden">
+
+    <!-- 상단 로고 및 상태 배지 -->
+    <header class="max-w-6xl mx-auto w-full flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500 to-indigo-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
+                <i class="fa-solid fa-network-wired text-lg"></i>
+            </div>
+            <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">MyWorkWeb</span>
+        </div>
+        <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+            DOMAIN TEST & LAUNCHING SOON
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="max-w-4xl mx-auto w-full text-center my-auto py-12">
+        <!-- 배경 빛 번짐 효과 -->
+        <div class="relative">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <span class="inline-block py-1 px-3 rounded-lg bg-white/5 border border-white/10 text-xs font-medium text-slate-300 mb-6 tracking-widest uppercase">
+            Smart Enterprise Workspace
+        </span>
+
+        <!-- 줄바꿈 현상을 막기 위해 폰트 크기 조절 및 whitespace-nowrap 적용 -->
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mb-6 leading-tight whitespace-nowrap">
+            더 스마트한 업무 환경을 위한 공간, <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">MyWorkWeb</span>
+        </h1>
+
+        <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            현재 <strong>myworkweb.co.kr</strong> 도메인 연결 및 시스템 안정화 테스트가 진행 중입니다.<br>더 나은 서비스로 찾아뵙겠습니다.
+        </p>
+
+        <!-- 핵심 방향 프리뷰 카드 (벤토 스타일) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <h3 class="font-bold text-sm mb-1 text-slate-200">통합 업무 플랫폼</h3>
+                <p class="text-xs text-slate-400">사내 시스템과 클라우드 자원을 유기적으로 연결합니다.</p>
+            </div>
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-9 h-9 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-bold text-sm mb-1 text-slate-200">안정적인 인프라</h3>
+                <p class="text-xs text-slate-400">철저한 보안과 고가용성을 바탕으로 운영됩니다.</p>
+            </div>
+            <div class="glass-card p-5 rounded-2xl">
+                <div class="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="font-bold text-sm mb-1 text-slate-200">맞춤형 솔루션</h3>
+                <p class="text-xs text-slate-400">업무 생산성을 극대화하는 다양한 유틸리티 제공.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 하단 푸터 -->
+    <footer class="max-w-6xl mx-auto w-full flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 border-t border-slate-800/80 pt-6 gap-4">
+        <p>&copy; MyWorkWeb. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> Domain Connection Test Complete</span>
+        </div>
+    </footer>
+
+</body>
+</html>
